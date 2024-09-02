@@ -85,31 +85,31 @@ prices_list = [0.5, 1.25, 3.75]
 prices_list[2] # <- integer
 
 # %%
-person_dict = {}
+person_3 = {}
 
 # %%
-person_dict
+person_3
 # %%
-person_dict['name'] = "Arie"
+person_3['name'] = "Arie"
 # %%
-person_dict["city"] = "Emmen"
-person_dict["hobbies"] = ['sport', 'chess', 'programming']
-person_dict["age"] = 40
-person_dict["pet"] = "Winston"
+person_3["city"] = "Emmen"
+person_3["hobbies"] = ['sport', 'chess', 'programming']
+person_3["age"] = 40
+person_3["pet"] = "Winston"
 
 
 # %%
-person_dict
+person_3
 # %%
-person_dict["city"] = "Terschelling"
+person_3["city"] = "Terschelling"
 
 
 #%%
-person_dict['pet']
+person_3['pet']
 # %%
-person_dict.keys()
+person_3.keys()
 # %%
-person_dict.values()
+person_3.values()
 
 # %%
 family = []
@@ -120,7 +120,7 @@ person_2 = {"name": "Mary"}
 # %%
 family.append(person_1)
 family.append(person_2)
-family.append(person_dict)
+family.append(person_3)
 
 # %%
 family
@@ -129,4 +129,40 @@ family
 len(family)
 # %%
 family[-1]['hobbies'][-2:][-1][:2]
+# %%
+
+
+# Assignments
+
+'''
+Create a dictionary with an (imaginary) person with attributes like his name, age and hobbies
+'''
+
+#%%
+person_1 = {"name": "Dirk",
+            "age": 40,
+            "hobbies": ["sport", "gaming", "reading"]}
+
+# %%
+person_2 = {"name": "Mary",
+            "age": 44,
+            "hobbies": ["tennis", "cooking", "reading"]}
+
+person_3 = {"name": "Bobby",
+            "age": 14,
+            "hobbies": ["football", "racing", "programming"]}
+
+
+#%% a.
+family_list = [person_1, person_2, person_3]
+family_list
+
+# %%
+family_dict = {}
+family_dict['name'] = "Jones"
+family_dict['members'] = [person_1, person_2, person_3]
+family_dict
+
+# %%
+family_dict['members'][-1]['hobbies'][1]
 # %%
