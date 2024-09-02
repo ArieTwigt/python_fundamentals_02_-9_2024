@@ -1,6 +1,7 @@
 #%%
 import requests
 import pandas
+import sys
 
 
 # %% #"90ljkk"
@@ -21,6 +22,11 @@ response.status_code
 
 # %%
 cars_list =  response.json()
+
+if len(cars_list) == 0:
+    print(f"❌ No cars found for {brand}")
+    sys.exit()
+
 
 # %%
 len(cars_list)
