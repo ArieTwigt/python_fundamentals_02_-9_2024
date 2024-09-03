@@ -18,10 +18,10 @@ endpoint = f"https://opendata.rdw.nl/resource/m9d7-ebf2.json?merk={brand_upper}&
 response = requests.get(endpoint)
 
 # %%
-response.status_code
+response.status_code # attribute 
 
 # %%
-cars_list =  response.json()
+cars_list =  response.json() # method
 
 if len(cars_list) == 0:
     print(f"❌ No cars found for {brand}")
