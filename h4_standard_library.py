@@ -70,3 +70,63 @@ folder_name
 # %%
 os.mkdir(folder_name)
 # %%
+type(folder_name)
+
+
+# Assignments
+
+# Assignment
+'''
+Assign a variable that holds the 
+number of days until your next birthday
+'''
+
+# %% a. 
+birthday_date = date(2025, 2, 26)
+birth_until_birthday = birthday_date - date.today() 
+print(birth_until_birthday)
+
+
+
+# %% b. 
+'''
+Calculate the surface 
+of a circle with a diameter of 10 (radius^ * pi)
+'''
+import math
+
+straal = 5
+oppervlakte = math.pi * math.pow(straal, 2)
+oppervlakte
+
+# %% c.
+'''
+Create list that contains the 
+files in your current working directory
+'''
+current_file_folders = os.listdir()
+current_file_folders
+
+# %% d.
+'''
+Add a directory with the name our_functions
+'''
+os.mkdir("our_functions")
+
+#%%
+os.makedirs("our_functions", exist_ok=True)
+
+#%%
+os.path.isdir('bmw.csv')
+
+#%%
+os.path.isdir('my_folder')
+# %%
+os.path.isfile('bmw.csv')
+# %%
+files = [x for x in current_file_folders if os.path.isfile(x)]
+files
+# %%
+folders = [x for x in current_file_folders if not os.path.isfile(x)]
+folders
+# %%
